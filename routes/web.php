@@ -45,10 +45,10 @@ Route::get('/test','IndexController@test');
 // Route::get('foo', "HelloController@hello")->middleware(checkRoute::class);
 
 //路由组
-// Route::group(["prefix" => "hello"], function () {
-// 	Route::get('nice', 'HelloController@nice');
-// 	Route::get('good', 'HelloController@good');
-// });
+Route::group(["prefix" => "hello"], function () {
+	Route::get('nice', 'HelloController@nice');
+	Route::get('good', 'HelloController@good');
+});
 
 // Route::namespace("Home")->group(function () {
 // 	Route::get('nice', 'HelloController@nice');
@@ -61,3 +61,5 @@ Route::get('/test','IndexController@test');
 // });
 // 
 Route::get('user/{id}', 'UserController@show');
+
+Route::post('file', 'FileController@file');

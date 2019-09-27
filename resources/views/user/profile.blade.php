@@ -4,6 +4,6 @@
 	<title></title>
 </head>
 <body>
-123123
+123123{{$user}}
 </body>
 </html>

@@ -15,12 +15,16 @@ class HelloController extends Controller
 
     public function foo()
     {
+
     	var_dump(route('Hello.foo'));
     	return 'name foooooooooooooo';
     }
 
     public function good()
     {
+
+        dd(1,2,3,4);
+        return [1,2,3,4];
     	return 'name goooooooooooooooooood';
     }
 
