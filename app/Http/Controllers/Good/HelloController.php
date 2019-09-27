@@ -15,4 +15,5 @@ class HelloController extends Controller
     public function nice2 () {
         return 2223233;
     }
+    
 }
