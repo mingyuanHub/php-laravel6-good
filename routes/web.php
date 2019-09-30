@@ -50,14 +50,14 @@ Route::group(['prefix' => 'hello'], function () {
 
 // Route::get('foo', "HelloController@hello")->middleware(checkRoute::class);
 
-Route::group(['namespace' => 'good', 'prefix' => 'hello'], function () {
-    Route::get('nice1', 'HelloController@nice1');
-    Route::get('nice2', 'HelloController@nice2');
+// Route::group(['namespace' => 'good', 'prefix' => 'hello'], function () {
+//     Route::get('nice1', 'HelloController@nice1');
+//     Route::get('nice2', 'HelloController@nice2');
 //路由组
-Route::group(["prefix" => "hello"], function () {
-	Route::get('nice', 'HelloController@nice');
-	Route::get('good', 'HelloController@good');
-});
+// Route::group(["prefix" => "hello"], function () {
+// 	Route::get('nice', 'HelloController@nice');
+// 	Route::get('good', 'HelloController@good');
+// });
 
 Route::get('show/{id}', 'UserController@show');
 // Route::namespace("Home")->group(function () {
