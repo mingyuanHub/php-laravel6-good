@@ -8,13 +8,30 @@ use Symfony\Component\HttpFoundation\Response;
 class HelloController extends Controller
 {
     //
-    public function test1() {
-        return 1111;
+    public function hello()
+    {
+    	// return route('foo');
+    	return 'name dddd';
     }
 
-    //
-    public function test2() {
-        return 2222;
+    public function foo()
+    {
+
+    	var_dump(route('Hello.foo'));
+    	return 'name foooooooooooooo';
+    }
+
+    public function good()
+    {
+
+        dd(1,2,3,4);
+        return [1,2,3,4];
+    	return 'name goooooooooooooooooood';
+    }
+
+    public function nice()
+    {
+    	return 'name niceeeeeeeeeeeee';
     }
 
     public function test3(Request $request) {
