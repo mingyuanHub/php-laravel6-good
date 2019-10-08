@@ -74,3 +74,11 @@ Route::get('showPro', 'ShowProfile');
 Route::get('user/{id}', 'UserController@show');
 
 Route::post('file', 'FileController@file');
+
+Route::get('testv', function () {
+	return view('test', [
+		'list' => [1,2,3]
+	])->with('name', 'fff');
+});
+
+Route::get('master', 'P1008Controller@master');
