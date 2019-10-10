@@ -59,7 +59,6 @@ Route::group(['prefix' => 'hello'], function () {
 // 	Route::get('good', 'HelloController@good');
 // });
 
-Route::get('show/{id}', 'UserController@show');
 // Route::namespace("Home")->group(function () {
 // 	Route::get('nice', 'HelloController@nice');
 // 	Route::get('good', 'HelloController@good');
@@ -81,4 +80,4 @@ Route::get('testv', function () {
 	])->with('name', 'fff');
 });
 
-Route::get('master', 'P1008Controller@master');
+Route::get('master', 'A1008Controller@master');
