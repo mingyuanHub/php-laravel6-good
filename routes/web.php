@@ -81,3 +81,5 @@ Route::get('testv', function () {
 });
 
 Route::get('master', 'A1008Controller@master');
+
+Route::get('dbsearch', 'A1010Controller@search');
