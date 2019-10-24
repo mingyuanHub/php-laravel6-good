@@ -82,6 +82,8 @@ Route::get('/', function () {
 
 Route::get('master', 'A1008Controller@master');
 
+Route::get('dbsearch', 'A1010Controller@search');
+
 Route::get('dbtest', 'A1008Controller@dbtest');
 
 Route::get('redis', 'RedisController@test');
