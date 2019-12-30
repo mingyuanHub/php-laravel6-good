@@ -21,6 +21,7 @@ class VerifyCsrfToken extends Middleware
     protected $except = [
         'http://localhost/laravel6.0/public/hello/test3?a=2',
         'http://localhost/laravel6.0/public/hello',
-        'http://localhost/laravel6.0/public/file'
+        'http://localhost/laravel6.0/public/file',
+        'http://localhost/laravel6.0/public/etest',
     ];
 }

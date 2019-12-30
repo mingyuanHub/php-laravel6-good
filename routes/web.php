@@ -79,8 +79,11 @@ Route::get('/', function () {
 // 		'list' => [1,2,3]
 // 	])->with('name', 'fff');
 // });
+header("Access-Control-Allow-Origin:*");
 
-Route::get('master', 'A1008Controller@master');
+Route::get('master', 'A1009Controller@master');
+
+Route::match(['get', 'post'], 'etest', 'A1009Controller@egretTest');
 
 Route::get('dbsearch', 'A1010Controller@search');
 
